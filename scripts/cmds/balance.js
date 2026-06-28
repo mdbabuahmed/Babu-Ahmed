@@ -8,14 +8,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "আপনার বা ট্যাগ করা ইউজারের ব্যালেন্স দেখুন (Short Form)",
-                        en: "View your money or tagged person money in formatted style",
-                        vi: "Xem số tiền của bạn hoặc người được tag (định dạng ngắn)"
+                        
                 },
                 category: "economy",
                 guide: {
                         bn: '   {pn}: নিজের ব্যালেন্স দেখতে\n   {pn} @tag: কারো ব্যালেন্স দেখতে',
-                        en: '   {pn}: View your money\n   {pn} @tag: View the money of the tagged person',
-                        vi: '   {pn}: Xem số tiền của bạn\n   {pn} @tag: Xem số tiền của người được tag'
+                      
                 }
         },
 
@@ -24,14 +22,7 @@ module.exports = {
                         money: "বেবি, তোমার কাছে মোট %1$ আছে।",
                         moneyOf: "%1 এর কাছে মোট %2$ আছে।"
                 },
-                en: {
-                        money: "Baby, you have a total of %1$.",
-                        moneyOf: "%1 has a total of %2$."
-                },
-                vi: {
-                        money: "🏦 | Bạn đang có %1$",
-                        moneyOf: "💰 | %1 đang có %2$"
-                }
+               
         },
 
         onStart: async function ({ message, usersData, event, getLang }) {
