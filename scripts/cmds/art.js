@@ -16,15 +16,15 @@ module.exports = {
                 countDown: 10,
                 role: 0,
                 description: {
-                        en: "Transform your photo into various art styles",
+                
                         bn: "আপনার ছবিকে বিভিন্ন আর্ট স্টাইলে রূপান্তর করুন",
-                        vi: "Chuyển đổi ảnh của bạn thành nhiều phong cách nghệ thuật khác nhau"
+                       
                 },
                 category: "Image gen",
                 guide: {
-                        en: "{pn} [1-100] Reply to a photo or {pn} list",
+                      
                         bn: "{pn} [১-১০০] ছবিতে রিপ্লাই দিন) অথবা {pn} list",
-                        vi: "{pn} [1-100] Phản hồi một ảnh hoặc {pn} list"
+                    
                 }
         },
 
@@ -37,22 +37,7 @@ module.exports = {
                         error: "❌ An error occurred: contact MahMUD %1",
                         success: "✅ | Here's your art image baby\n• Style: %1\n• Style name: %2"
                 },
-                en: {
-                        list_header: "✅ | 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐀𝐫𝐭 𝐒𝐭𝐲𝐥𝐞𝐬 𝐋𝐢𝐬𝐭:\n\n",
-                        no_image: "• Baby, Please reply to a photo.",
-                        invalid_style: "❌ Style number must be between 1 and 100.",
-                        generating: "🔄 | Applying art, please wait...\n• Style: %1\n• Style name: %2",
-                        error: "❌ An error occurred: contact MahMUD %1",
-                        success: "✅ | Here's your art image baby\n• Style: %1\n• Style name: %2"
-                },
-                vi: {
-                        list_header: "✅ | 𝐃𝐚𝐧𝐡 𝐬á𝐜𝐡 𝐩𝐡𝐨𝐧𝐠 𝐜á𝐜𝐡 𝐧𝐠𝐡ệ 𝐭𝐡𝐮ậ𝐭:\n\n",
-                        no_image: "📸 Vui lòng phản hồi một ảnh.",
-                        invalid_style: "❌ Số kiểu phải từ 1 đến 100.",
-                        generating: "🔄 | Applying art, please wait...\n• Style: %1\n• Style name: %2",
-                        error: "❌ An error occurred: contact MahMUD %1",
-                        success: "✅ | Here's your art image baby\n• Style: %1\n• Style name: %2"
-                }
+              
         },
 
         onStart: async function ({ api, event, args, message, getLang }) {
