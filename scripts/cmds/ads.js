@@ -17,20 +17,14 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "কারো ছবি দিয়ে বিজ্ঞাপনের (Ad) ইফেক্ট তৈরি করুন",
-                        en: "Create an advertisement (Ad) effect with someone's photo",
-                        vi: "Tạo hiệu ứng quảng cáo (Ad) với ảnh của ai đó"
+                     
                 },
                 category: "fun",
                 guide: {
                         bn: '   {pn} <@tag>: কাউকে ট্যাগ করে অ্যাড ইফেক্ট দিন'
                                 + '\n   {pn} <uid>: UID দিয়ে ইফেক্ট তৈরি করুন'
                                 + '\n   (অথবা মেসেজে রিপ্লাই দিয়ে ব্যবহার করুন)',
-                        en: '   {pn} <@tag>: Give ad effect by tagging'
-                                + '\n   {pn} <uid>: Create effect using UID'
-                                + '\n   (Or use by replying to a message)',
-                        vi: '   {pn} <@tag>: Tạo hiệu ứng quảng cáo bằng cách gắn thẻ'
-                                + '\n   {pn} <uid>: Tạo hiệu ứng bằng UID'
-                                + '\n   (Hoặc phản hồi tin nhắn)'
+                     
                 }
         },
 
@@ -40,16 +34,7 @@ module.exports = {
                         success: "Effect ad successful 📺",
                         error: "× ইফেক্ট তৈরি করতে সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        noTarget: "× Baby, mention, reply, or provide UID of the target! 📺",
-                        success: "Effect ad successful 📺",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        noTarget: "× Cưng ơi, hãy gắn thẻ, phản hồi hoặc cung cấp UID mục tiêu! 📺",
-                        success: "Hiệu ứng quảng cáo thành công 📺",
-                        error: "× Lỗi tạo hiệu ứng: %1. Liên hệ MahMUD để hỗ trợ."
-                }
+               
         },
 
         onStart: async function ({ api, event, args, message, getLang }) {
