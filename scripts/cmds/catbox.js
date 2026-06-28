@@ -15,14 +15,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "যেকোনো মিডিয়া ফাইলকে লিঙ্কে রূপান্তর করুন",
-                        en: "Convert any media file into a link",
-                        vi: "Chuyển đổi bất kỳ tệp phương tiện nào thành liên kết"
+                       
                 },
                 category: "tools",
                 guide: {
                         bn: '   {pn}: যেকোনো ছবি/ভিডিওতে রিপ্লাই দিয়ে ব্যবহার করুন',
-                        en: '   {pn}: Reply to any image/video to get the link',
-                        vi: '   {pn}: Phản hồi bất kỳ ảnh/video nào để lấy liên kết'
+                        
                 }
         },
 
@@ -33,18 +31,7 @@ module.exports = {
                         success: "Successfully Uploaded ✅\n\n🔗 𝐔𝐑𝐋: %1",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        noMedia: "🐤 | Baby, please reply to a media file (image/video)! 🖼️",
-                        uploading: "⌛ | Uploading, please wait a moment baby... <😘",
-                        success: "Successfully Uploaded ✅\n\n🔗 𝐔𝐑𝐋: %1",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        noMedia: "🐤 | Cưng ơi, vui lòng phản hồi một tệp ảnh hoặc video! 🖼️",
-                        uploading: "⌛ | Đang tải lên, chờ chút nhé cưng... <😘",
-                        success: "Tải lên thành công ✅\n\n🔗 𝐔𝐑𝐋: %1",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
-                }
+               
         },
 
         onStart: async function ({ api, event, message, getLang }) {
