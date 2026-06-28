@@ -17,14 +17,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "র‍্যান্ডম কার এডিট ভিডিও পান",
-                        en: "Get a random car edit video",
-                        vi: "Lấy một video chỉnh sửa xe hơi ngẫu nhiên"
+                       
                 },
                 category: "media",
                 guide: {
                         bn: '   {pn}: একটি র‍্যান্ডম কার ভিডিও দেখতে ব্যবহার করুন',
-                        en: '   {pn}: Use to get a random car video',
-                        vi: '   {pn}: Sử dụng để lấy một video xe hơi ngẫu nhiên'
+                      
                 }
         },
 
@@ -34,16 +32,7 @@ module.exports = {
                         success: "𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐂𝐚𝐫 𝐯𝐢𝐝𝐞𝐨 𝐛𝐚𝐛𝐲 <😘",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        noVideo: "× No videos found",
-                        success: "𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐂𝐚𝐫 𝐯𝐢𝐝𝐞𝐨 𝐛𝐚𝐛𝐲 <😘",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        noVideo: "× Không tìm thấy video nàn",
-                        success: "Video xe hơi của cưng đây <😘",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
-                }
+               
         },
 
         onStart: async function ({ api, event, message, getLang }) {
