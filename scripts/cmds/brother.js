@@ -17,14 +17,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "ভাই-বোনের মিষ্টি সম্পর্কের একটি ছবি তৈরি করুন",
-                        en: "Create a sweet brother-sister relationship image",
-                        vi: "Tạo hình ảnh tình cảm anh chị em ngọt ngào"
+                     
                 },
                 category: "love",
                 guide: {
                         bn: '   {pn} <@tag/reply>: কাউকে ট্যাগ অথবা রিপ্লাই দিন',
-                        en: '   {pn} <@tag/reply>: Tag or reply to someone',
-                        vi: '   {pn} <@tag/reply>: Gắn thẻ hoặc phản hồi ai đó'
+                       
                 }
         },
 
@@ -35,18 +33,8 @@ module.exports = {
                         success: "𝐋𝐢𝐟𝐞'𝐬 𝐛𝐞𝐭𝐭𝐞𝐫 𝐰𝐢𝐭𝐡 𝐚 𝐁𝐫𝐨𝐭𝐡𝐞𝐫 𝐛𝐲 𝐲𝐨𝐮𝐫 𝐬𝐢𝐝𝐞 🎀",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        noTarget: "× Baby, please tag or reply to someone! 🎀",
-                        wait: "⌛ Generating your image... Please wait a moment baby! <😘",
-                        success: "𝐋𝐢𝐟𝐞'𝐬 𝐛𝐞𝐭𝐭𝐞𝐫 𝐰𝐢𝐭𝐡 𝐚 𝐁𝐫𝐨𝐭𝐡𝐞𝐫 𝐛𝐲 𝐲𝐨𝐮𝐫 𝐬𝐢𝐝𝐞 🎀",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        noTarget: "× Cưng ơi, hãy gắn thẻ hoặc phản hồi ai đó! 🎀",
-                        wait: "⌛ Đang tạo hình ảnh cho cưng... Chờ chút nhé! <😘",
-                        success: "𝐂𝐮𝐨̣̂𝐜 𝐬𝐨̂́𝐧𝐠 𝐭𝐨̂́𝐭 đ𝐞̣𝐩 𝐡𝐨̛𝐧 𝐤𝐡𝐢 𝐜𝐨́ 𝐚𝐧𝐡 𝐞𝐦 𝐛𝐞̂𝐧 𝐜𝐚̣𝐧𝐡 🎀",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
-                }
+               
+                
         },
 
         onStart: async function ({ api, event, args, message, getLang }) {
