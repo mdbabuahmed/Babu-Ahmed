@@ -15,12 +15,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "টিকটক, ফেসবুক, ইনস্টাগ্রাম, ইউটিউব এবং আরও অনেক সাইট থেকে অটো ভিডিও ডাউনলোড করুন",
-                        en: "Auto download video from Tiktok, Facebook, Instagram, YouTube, and more"
+                       
                 },
                 category: "media",
                 guide: {
                         bn: "[ভিডিও_লিংক]\n\nSupported Platforms:\n• TikTok\n• YouTube / Shorts\n• Facebook / FB Watch\n• Instagram / Reels\n• Twitter (X)\n• Threads\n• Snapchat\n• Pinterest\n• Spotify\n• SoundCloud\n• Reddit\n• LinkedIn\n• CapCut\n• Dailymotion\n• Kwai / Kuaishou\n• Douyin\n• Bluesky\n• Tumblr",
-                        en: "[video_link]\n\nSupported Platforms:\n• TikTok\n• YouTube / Shorts\n• Facebook / FB Watch\n• Instagram / Reels\n• Twitter (X)\n• Threads\n• Snapchat\n• Pinterest\n• Spotify\n• SoundCloud\n• Reddit\n• LinkedIn\n• CapCut\n• Dailymotion\n• Kwai / Kuaishou\n• Douyin\n• Bluesky\n• Tumblr"
+                        
                 }
         },
 
@@ -29,10 +29,7 @@ module.exports = {
                         defaultCaption: "ডাউনলোড করা ভিডিও",
                         error: "× ভিডিও ডাউনলোড করতে সমস্যা হয়েছে।\n•WhatsApp: 01836298139"
                 },
-                en: {
-                        defaultCaption: "Downloaded Video",
-                        error: "× Failed to download video.\n•WhatsApp: 01836298139"
-                }
+                
         },
 
         onStart: async function () {},
