@@ -15,14 +15,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "বিভিন্ন ক্যাটাগরির এনিমে ছবি পান",
-                        en: "Get anime pictures from various categories",
-                        vi: "Lấy hình ảnh anime từ các danh mục khác nhau"
+                      
                 },
                 category: "anime",
                 guide: {
                         bn: '   {pn} <category>: (যেমন: {pn} gojo)',
-                        en: '   {pn} <category>: (Ex: {pn} gojo)',
-                        vi: '   {pn} <category>: (VD: {pn} gojo)'
+                      
                 }
         },
 
@@ -33,18 +31,7 @@ module.exports = {
                         success: "এখানে তোমার %1 ছবি বেবি <😘",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        noCategory: "× Baby, please select a category:\n• %1",
-                        invalid: "× Invalid category! Choose one from:\n%1",
-                        success: "Here's your %1 image baby <😘",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        noCategory: "× Cưng ơi, hãy chọn một danh mục:\n• %1",
-                        invalid: "× Danh mục không hợp lệ! Chọn một trong:\n%1",
-                        success: "Ảnh %1 của cưng đây <😘",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
-                }
+               
         },
 
         onStart: async function ({ api, event, args, message, getLang }) {
