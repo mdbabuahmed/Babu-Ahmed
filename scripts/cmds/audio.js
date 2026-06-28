@@ -15,15 +15,15 @@ module.exports = {
                 countDown: 5,
                 role: 0,
                 description: {
-                        en: "Download any song directly from YouTube",
+                        
                         bn: "যেকোনো গান সরাসরি ডাউনলোড করুন",
-                        vi: "Tải bất kỳ bài hát nào trực tiếp từ YouTube"
+                        
                 },
                 category: "music",
                 guide: {
-                        en: '   {pn} <song name>\n   Example: {pn} stay justin bieber',
+                       
                         bn: '   {pn} <গানের নাম>\n   উদাহরণ: {pn} tui chinli na amay',
-                        vi: '   {pn} <tên bài hát>\n   Ví dụ: {pn} see you again'
+                     
                 }
         },
 
@@ -33,16 +33,7 @@ module.exports = {
                         noResult: "⭕ | দুঃখিত বেবি, \"%1\" এর জন্য কিছু খুঁজে পাইনি।",
                         success: "✅ | এই নাও তোমার গান: %1"
                 },
-                en: {
-                        error: "❌ An error occurred: contact MahMUD to help %1",
-                        noResult: "⭕ | Sorry baby, I couldn't find anything for \"%1\"",
-                        success: "✅ | Here is your song: %1"
-                },
-                vi: {
-                        error: "❌ Đã xảy ra lỗi: liên hệ MahMUD để được hỗ trợ %1",
-                        noResult: "⭕ | Xin lỗi bé, không tìm thấy kết quả cho \"%1\"",
-                        success: "✅ | Đây là bài hát của bạn: %1"
-                }
+             
         },
 
         onStart: async function ({ api, args, message, event, getLang }) {
