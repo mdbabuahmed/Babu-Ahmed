@@ -17,9 +17,9 @@ module.exports = {
                 category: "fun",
                 cooldown: 8,
                 guide: {
-                        en: "{pn} [mention/reply/UID]",
+                     
                         bn: "{pn} [মেনশন/রিপ্লাই/UID]",
-                        vi: "{pn} [mention/reply/UID]"
+                      
                 }
         },
 
@@ -29,16 +29,7 @@ module.exports = {
                         error: "❌ An error occurred: contact MahMUD %1",
                         success: "Effect: buttslap successful"
                 },
-                en: {
-                        usage: "• Usage: buttslap @mention or reply to a message.",
-                        error: "❌ An error occurred: contact MahMUD %1",
-                        success: "Effect: buttslap successful"
-                },
-                vi: {
-                        usage: "• Cách dùng: buttslap @mention hoặc reply tin nhắn.",
-                        error: "❌ An error occurred: contact MahMUD %1",
-                        success: "Hiệu ứng: buttslap thành công"
-                }
+               
         },
 
         onStart: async function ({ api, event, args, getLang }) {
