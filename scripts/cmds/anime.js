@@ -17,17 +17,13 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "র‍্যান্ডম এনিমে ভিডিও স্ট্যাটাস পান",
-                        en: "Get a random anime video status",
-                        vi: "Lấy một video anime ngẫu nhiên"
+                       
                 },
                 category: "anime",
                 guide: {
                         bn: '   {pn}: র‍্যান্ডম ভিডিও পেতে ব্যবহার করুন'
                                 + '\n   {pn} list: এনিমে ক্যাটাগরিগুলো দেখুন',
-                        en: '   {pn}: Get a random anime video'
-                                + '\n   {pn} list: See available categories',
-                        vi: '   {pn}: Lấy video anime ngẫu nhiên'
-                                + '\n   {pn} list: Xem các danh mục có sẵn'
+                      
                 }
         },
 
@@ -39,20 +35,7 @@ module.exports = {
                         success: "✨ | 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐚𝐧𝐢𝐦𝐞 𝐯𝐢𝐝𝐞𝐨 𝐛𝐚𝐛𝐲 <😘",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।\n•WhatsApp: 01836298139"
                 },
-                en: {
-                        noCat: "× No anime categories found.",
-                        wait: "🐤 | Loading random anime video... Please wait baby! <😘",
-                        noVid: "× No videos found.",
-                        success: "✨ | 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐚𝐧𝐢𝐦𝐞 𝐯𝐢𝐝𝐞𝐨 𝐛𝐚𝐛𝐲 <😘",
-                        error: "× API error: %1. Contact MahMUD for help.\n•WhatsApp: 01836298139"
-                },
-                vi: {
-                        noCat: "× Không tìm thấy danh mục anime nào.",
-                        wait: "🐤 | Đang tải video anime... Chờ chút nhé cưng! <😘",
-                        noVid: "× Không tìm thấy video nào.",
-                        success: "✨ | Video anime của cưng đây <😘",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ.\n•WhatsApp: 01836298139"
-                }
+             
         },
 
         onStart: async function ({ api, event, message, args, getLang }) {
