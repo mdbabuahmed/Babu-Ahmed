@@ -15,14 +15,11 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "র‍্যান্ডম এনিমে কাপল প্রোফাইল পিকচার পান",
-                        en: "Get random anime couple profile pictures",
-                        vi: "Lấy ảnh đại diện cặp đôi anime ngẫu nhiên"
                 },
                 category: "media",
                 guide: {
                         bn: '   {pn}: র‍্যান্ডম এনিমে সিডিপি পেতে ব্যবহার করুন',
-                        en: '   {pn}: Use to get random anime cdp',
-                        vi: '   {pn}: Sử dụng để lấy cdp anime ngẫu nhiên'
+                        
                 }
         },
 
@@ -33,18 +30,7 @@ module.exports = {
                         success: "🎀 | 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐫𝐚𝐧𝐝𝐨𝐦 𝐚𝐧𝐢𝐦𝐞 𝐜𝐝𝐩 𝐛𝐚𝐛𝐲",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        wait: "⌛ | Baby, searching for anime cdp for you...!!",
-                        noResult: "× No images found!",
-                        success: "🎀 | 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐫𝐚𝐧𝐝𝐨𝐦 𝐚𝐧𝐢𝐦𝐞 𝐜𝐝𝐩 𝐛𝐚𝐛𝐲",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        wait: "⌛ Cưng ơi, đang tìm ảnh cdp anime cho cưng...!!",
-                        noResult: "× Không tìm thấy hình ảnh nào!",
-                        success: "🎀 Ảnh cdp anime của cưng đây",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
-                }
+              
         },
 
         onStart: async function ({ api, event, message, getLang }) {
