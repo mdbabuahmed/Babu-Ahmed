@@ -14,17 +14,13 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "র‍্যান্ডম কাপল ডিপি এবং ছবি পান",
-                        en: "Get random couple profile pictures",
-                        vi: "Lấy ảnh đại diện đôi ngẫu nhiên"
+                       
                 },
                 category: "love",
                 guide: {
                         bn: '   {pn}: র‍্যান্ডম কাপল ডিপি পান'
                                 + '\n   {pn} list: মোট কতগুলো ডিপি আছে দেখুন',
-                        en: '   {pn}: Get a random couple DP'
-                                + '\n   {pn} list: Check total available DPs',
-                        vi: '   {pn}: Nhận ảnh đại diện đôi ngẫu nhiên'
-                                + '\n   {pn} list: Kiểm tra tổng số ảnh có sẵn'
+                       
                 }
         },
 
@@ -35,18 +31,7 @@ module.exports = {
                         success: "🎀 | এই নাও তোমাদের ডিপি বেবি <😘",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        total: "🎀 Total Couple DPs: %1",
-                        noData: "× No Couple DP found.",
-                        success: "🎀 | 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐜𝐝𝐩 𝐛𝐚𝐛𝐲",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        total: "🎀 Tổng số ảnh đôi: %1",
-                        noData: "× Không tìm thấy ảnh đôi nào.",
-                        success: "🎀 | Ảnh đôi của các cưng đây <😘",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
-                }
+             
         },
 
         onStart: async function ({ api, event, args, message, getLang }) {
