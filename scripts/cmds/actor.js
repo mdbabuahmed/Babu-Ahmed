@@ -15,14 +15,10 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "অভিনেতার ছবি দেখে নাম অনুমান করার খেলা",
-                        en: "Guess the actor name by looking at the picture",
-                        vi: "Đoán tên diễn viên bằng cách nhìn vào bức ảnh"
                 },
                 category: "game",
                 guide: {
                         bn: '   {pn}: গেমটি শুরু করতে লিখুন',
-                        en: '   {pn}: Type to start the game',
-                        vi: '   {pn}: Nhập để bắt đầu trò chơi'
                 }
         },
 
@@ -33,21 +29,8 @@ module.exports = {
                         wrong: "🥺 | উত্তরটি ভুল হয়েছে বেবি!\n\nসঠিক উত্তর ছিল: %1",
                         notYour: "× বেবি, এটি তোমার জন্য নয়! নিজের জন্য গেম শুরু করো। >🐸",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
-                },
-                en: {
-                        start: "A random actor has appeared! Guess the name, baby.",
-                        correct: "✅ | Correct answer, baby!\n\nYou have earned %1 coins and %2 exp.",
-                        wrong: "🥺 | Wrong Answer, baby!\n\nThe Correct answer was: %1",
-                        notYour: "× This is not your actor, baby! >🐸",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        start: "Một diễn viên đã xuất hiện! Đoán tên đi cưng.",
-                        correct: "✅ | Đáp án chính xác cưng ơi!\n\n✨ Bạn nhận được %1 xu và %2 exp.",
-                        wrong: "🥺 | Sai rồi cưng ơi!\n\nĐáp án đúng là: %1",
-                        notYour: "× Đây không phải phần chơi của bạn cưng à! >🐸",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để được hỗ trợ."
                 }
+            
         },
 
         onReply: async function ({ api, event, Reply, usersData, getLang }) {
