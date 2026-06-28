@@ -17,14 +17,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "ব্লিচ এনিমের র‍্যান্ডম ব্যাংকাই ভিডিও পান",
-                        en: "Get a random Bankai video from Bleach anime",
-                        vi: "Lấy một video Bankai ngẫu nhiên từ anime Bleach"
+                       
                 },
                 category: "anime",
                 guide: {
                         bn: '   {pn}: একটি র‍্যান্ডম ব্যাংকাই ভিডিও দেখতে ব্যবহার করুন',
-                        en: '   {pn}: Use to get a random Bankai video',
-                        vi: '   {pn}: Sử dụng để lấy một video Bankai ngẫu nhiên'
+                        
                 }
         },
 
@@ -34,16 +32,7 @@ module.exports = {
                         success: "𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐁𝐀𝐍𝐊𝐀𝐈 𝐯𝐢𝐝𝐞𝐨 𝐛𝐚𝐛𝐲 <😘",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        noVideo: "× No videos found! 🗡️",
-                        success: "𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐁𝐀𝐍𝐊𝐀𝐈 𝐯𝐢𝐝𝐞𝐨 𝐛𝐚𝐛𝐲 <😘",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        noVideo: "× Không tìm thấy video nào! 🗡️",
-                        success: "Video BANKAI của cưng đây <😘",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
-                }
+                
         },
 
         onStart: async function ({ api, event, message, getLang }) {
