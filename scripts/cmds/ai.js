@@ -14,14 +14,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "যেকোনো বিষয়ে এআই সহকারীর সাথে চ্যাট করুন",
-                        en: "Chat with an AI assistant on any topic",
-                        vi: "Trò chuyện với trợ lý AI về bất kỳ chủ đề nào"
-                },
+                      
+                }
                 category: "ai",
                 guide: {
                         bn: '   {pn} <প্রশ্ন>: আপনার প্রশ্নটি লিখুন',
-                        en: '   {pn} <question>: Type your question',
-                        vi: '   {pn} <câu hỏi>: Nhập câu hỏi của bạn'
+                
                 }
         },
 
@@ -29,15 +27,8 @@ module.exports = {
                 bn: {
                         noInput: "× বেবি, কিছু তো জিজ্ঞাসা করো!",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD|\n•WhatsApp: 01836298139"
-                },
-                en: {
-                        noInput: "× Baby, please ask something!",
-                        error: "× API error: %1. Contact MahMUD for help.\n•WhatsApp: 01836298139"
-                },
-                vi: {
-                        noInput: "× Cưng ơi, hãy hỏi điều gì đó!",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ.\n•WhatsApp: 01836298139"
                 }
+                
         },
 
         onStart: async function ({ api, event, args, message, getLang, commandName }) {
