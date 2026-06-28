@@ -15,14 +15,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "অ্যানিমে কুইজ খেলে কয়েন এবং এক্সপি জিতুন",
-                        en: "Play anime quiz to win coins and exp",
-                        vi: "Chơi đố vui anime để giành được xu và exp"
+                      
                 },
                 category: "game",
                 guide: {
                         bn: '   {pn} en: ইংরেজি কুইজ\n   {pn} bn: বাংলা কুইজ',
-                        en: '   {pn} en: English quiz\n   {pn} bn: Bangla quiz',
-                        vi: '   {pn} en: Câu đố tiếng Anh\n   {pn} bn: Câu đố tiếng Bengal'
+                        
                 }
         },
 
@@ -34,20 +32,7 @@ module.exports = {
                         notYour: "× বেবি, এটি তোমার কুইজ নয়! নিজের জন্য শুরু করো। >🐸",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        reply: "𝐑𝐞𝐩𝐥𝐲 𝐰𝐢𝐭𝐡 𝐲𝐨𝐮𝐫 𝐚𝐧𝐬𝐰𝐞𝐫.",
-                        correct: "✅ | Correct answer baby! 💕\n\nYou earned %1 coins & %2 exp.",
-                        wrong: "❌ | Wrong answer baby!\n\nThe correct answer was: %1",
-                        notYour: "𝐓𝐡𝐢𝐬 𝐢𝐬 𝐧𝐨𝐭 𝐲𝐨𝐮𝐫 𝐪𝐮𝐢𝐳 𝐛𝐚𝐛𝐲 >🐸",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        reply: "Trả lời bằng đáp án của bạn đi cưng",
-                        correct: "✅ | Đáp án chính xác cưng ơi! 💕\n\nBạn nhận được %1 xu & %2 exp.",
-                        wrong: "❌ | Sai rồi cưng ơi!\n\n💡 Đáp án đúng là: %1",
-                        notYour: "× Đây không phải câu đố của bạn cưng à! >🐸",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để được hỗ trợ."
-                }
+           
         },
 
         onStart: async function ({ api, event, args, getLang }) {
