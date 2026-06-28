@@ -15,14 +15,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "যেকোনো এনিমে সম্পর্কে বিস্তারিত তথ্য জানুন",
-                        en: "Get detailed information about any anime",
-                        vi: "Lấy thông tin chi tiết về bất kỳ bộ anime nào"
+                        
                 },
                 category: "anime",
                 guide: {
                         bn: '   {pn} <এনিমে নাম>: বিস্তারিত জানতে নাম লিখুন',
-                        en: '   {pn} <anime name>: Provide the anime name to get details',
-                        vi: '   {pn} <tên anime>: Cung cấp tên anime để lấy chi tiết'
+                       
                 }
         },
 
@@ -32,16 +30,7 @@ module.exports = {
                         notFound: "❌ দুঃখিত বেবি, এই এনিমে তথ্য খুঁজে পাওয়া যায়নি।",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        noInput: "⚠️ Baby, please enter an anime name!",
-                        notFound: "❌ Sorry baby, anime info not found.",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        noInput: "⚠️ Cưng ơi, vui lòng nhập tên anime!",
-                        notFound: "❌ Xin lỗi cưng, không tìm thấy thông tin anime này.",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
-                }
+              
         },
 
         onStart: async function ({ api, event, args, message, getLang }) {
