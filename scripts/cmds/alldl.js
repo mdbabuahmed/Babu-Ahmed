@@ -16,28 +16,22 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "যেকোনো সোশ্যাল মিডিয়া ভিডিও ডাউনলোড করুন",
-                        en: "Download videos from any social media"
+                
                 },
                 category: "media",
                 guide: {
                         bn: '   {pn} <লিংক>: ভিডিওর লিংক দিন'
                                 + '\n   অথবা ভিডিও লিংকে রিপ্লাই দিয়ে {pn} লিখুন'
                                 + '\n\nSupported Platforms:\n• TikTok\n• YouTube / Shorts\n• Facebook / FB Watch\n• Instagram / Reels\n• Twitter (X)\n• Threads\n• Snapchat\n• Pinterest\n• Spotify\n• SoundCloud\n• Reddit\n• LinkedIn\n• CapCut\n• Dailymotion\n• Kwai / Kuaishou\n• Douyin\n• Bluesky\n• Tumblr',
-                        en: '   {pn} <link>: Provide the video link'
-                                + '\n   Or reply to a link with {pn}'
-                                + '\n\nSupported Platforms:\n• TikTok\n• YouTube / Shorts\n• Facebook / FB Watch\n• Instagram / Reels\n• Twitter (X)\n• Threads\n• Snapchat\n• Pinterest\n• Spotify\n• SoundCloud\n• Reddit\n• LinkedIn\n• CapCut\n• Dailymotion\n• Kwai / Kuaishou\n• Douyin\n• Bluesky\n• Tumblr'
-                }
+                           }
         },
 
         langs: {
                 bn: {
                         noLink: "× বেবি, একটি সঠিক ভিডিও লিংক দাও অথবা লিংকে রিপ্লাই করো!",
                         error: "× ভিডিও ডাউনলোড করতে সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।\n•WhatsApp: 01836298139"
-                },
-                en: {
-                        noLink: "× Baby, please provide a valid video link or reply to one!",
-                        error: "× Download error: %1. Contact MahMUD for help.\n•WhatsApp: 01836298139"
                 }
+               
         },
 
         onStart: async function ({ api, message, args, event, getLang }) {
