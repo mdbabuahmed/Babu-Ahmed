@@ -16,14 +16,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "প্রিয়জনের সাথে বেড হাগ ইমেজ জেনারেট করুন",
-                        en: "Generate a bed hug image with your loved one",
-                        vi: "Tạo hình ảnh ôm nhau trên giường với người yêu"
+                       
                 },
                 category: "love",
                 guide: {
                         bn: '   {pn} @মেনশন: কাউকে মেনশন দিয়ে ব্যবহার করুন',
-                        en: '   {pn} @mention: Mention someone to use',
-                        vi: '   {pn} @mention: Đề cập đến ai đó để sử dụng'
+                        
                 }
         },
 
@@ -31,19 +29,9 @@ module.exports = {
                 bn: {
                         noMention: "× বেবি, কাউকে তো মেনশন দাও! 💞",
                         success: "𝐇𝐞𝐫𝐞’𝐬 𝐲𝐨𝐮𝐫 𝐢𝐦𝐚𝐠𝐞 𝐛𝐚𝐛𝐲 <😘",
-                        error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
+                        error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact Babu Ahmed।"
                 },
-                en: {
-                        noMention: "× Baby, please mention someone! 💞",
-                        success: "𝐇𝐞𝐫𝐞’𝐬 𝐲𝐨𝐮𝐫 𝐢𝐦𝐚𝐠𝐞 𝐛𝐚𝐛𝐲 <😘",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        noMention: "× Cưng ơi, hãy đề cập đến ai đó! 💞",
-                        success: "Ảnh của cưng đây <😘",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
-                }
-        },
+               
 
         onStart: async function ({ api, event, message, getLang }) {
                 const authorName = String.fromCharCode(77, 97, 104, 77, 85, 68);
