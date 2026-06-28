@@ -17,14 +17,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "যেকোনো এনিমে সার্চ করে ভিডিও দেখুন",
-                        en: "Search any anime and get its video",
-                        vi: "Tìm kiếm bất kỳ phim hoạt hình nào và lấy video của nó"
+                        
                 },
                 category: "anime",
                 guide: {
                         bn: '   {pn} <এনিমে নাম>: ভিডিও পেতে এনিমে নাম লিখুন',
-                        en: '   {pn} <anime name>: Provide the anime name to search',
-                        vi: '   {pn} <tên anime>: Cung cấp tên anime để tìm kiếm'
+                       
                 }
         },
 
@@ -34,16 +32,7 @@ module.exports = {
                         success: "• 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐚𝐧𝐢𝐦𝐞 𝐯𝐢𝐝𝐞𝐨 <😘\n• 𝐒𝐞𝐚𝐫𝐜𝐡: %1",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        noQuery: "• Baby, please provide a search query! 😘",
-                        success: "• 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐚𝐧𝐢𝐦𝐞 𝐯𝐢𝐝𝐞𝐨 <😘\n• 𝐒𝐞𝐚𝐫𝐜𝐡: %1",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        noQuery: "• Cưng ơi, vui lòng nhập tên anime! 😘",
-                        success: "• Video anime của cưng đây <😘\n• Tìm kiếm: %1",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
-                }
+              
         },
 
         onStart: async function ({ api, event, args, message, getLang }) {
