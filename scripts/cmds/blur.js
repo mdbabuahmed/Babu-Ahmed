@@ -14,14 +14,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "যেকোনো ছবিকে ব্লার বা ঝাপসা করুন (১-১০০ লেভেল)",
-                        en: "Blur any image (Level 1-100)",
-                        vi: "Làm mờ bất kỳ hình ảnh nào (Cấp độ 1-100)"
+                       
                 },
                 category: "image",
                 guide: {
                         bn: '   {pn} <লেভেল>: ছবির রিপ্লাই দিয়ে ব্যবহার করুন\n   {pn} <url> <লেভেল>: ছবির লিঙ্ক দিয়ে ব্যবহার করুন',
-                        en: '   {pn} <level>: Reply to an image\n   {pn} <url> <level>: Provide an image URL',
-                        vi: '   {pn} <cấp độ>: Phản hồi một hình ảnh\n   {pn} <url> <cấp độ>: Cung cấp liên kết hình ảnh'
+                        
                 }
         },
 
@@ -33,20 +31,7 @@ module.exports = {
                         success: "এই নাও তোমার %1% ব্লার করা ছবি বেবি! <😘",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        invalidLevel: "× Baby, please enter a blur level between 1–100! ❌",
-                        noImg: "× Baby, please reply to an image or provide a URL! 🖼️",
-                        wait: "Baby, please wait a moment while I blur it! <😘",
-                        success: "Here's your %1% blurred image baby! <😘",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        invalidLevel: "× Cưng ơi, vui lòng nhập cấp độ mờ từ 1-100! ❌",
-                        noImg: "× Cưng ơi, vui lòng phản hồi ảnh hoặc cung cấp liên kết! 🖼️",
-                        wait: "Chờ chút nhé cưng, anh đang làm mờ ảnh! <😘",
-                        success: "Ảnh mờ %1% của cưng đây! <😘",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
-                }
+               
         },
 
         onStart: async function ({ api, args, message, event, getLang }) {
