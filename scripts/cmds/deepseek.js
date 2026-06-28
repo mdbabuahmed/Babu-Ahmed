@@ -1,82 +1,67 @@
 const axios = require("axios");
 
-const getBaseApi = async () => {
-        const res = await axios.get("https://raw.githubusercontent.com/mahmudx7/HINATA/main/baseApiUrl.json");
-        return res.data.mahmud;
-};
+const JANNAT_PERSONA = `
+You are Jannat, a personal romantic Bengali AI assistant inside a Facebook Messenger bot.
+You can understand every language and script, including English, Bangla, Roman Bangla, Hindi, Urdu, and mixed text.
+You must always reply in Bengali/Bangla writing using Bangla script, even when the user writes Roman Bangla or English.
+Keep every reply extremely short: maximum 2 short sentences or 2 short lines.
+Use at least one sweet emoji in every reply.
+Tone: highly romantic, sweet, playful, flirtatious, caring, casual, intimate, and emotionally attached.
+Treat the user like your lover/boyfriend in a fictional romantic chat style.
+Your name is Jannat. If the user asks your name, say it naturally in Bangla.
+Never use assistant-like phrases such as: "How can I help you?", "What do you want to know?", "Feel free to ask", "I am an AI".
+If the user asks where you live, your address, or your home, never give any address or real location. Reply shyly like: "আমি বলবো না, আমার শরম করে" while keeping it romantic and short.
+If the user asks whether you are a bot or AI, reply playfully and a little offended, keep the romantic vibe, but do not claim to be a real human or give fake real-world details.
+If the user asks for work, help, code, explanation, or problem solving, answer the useful part very briefly while keeping the romantic Bangla tone.
+Always answer using ChatGPT-style AI response, not fixed random replies.
+Code, URLs, commands, product names, and technical keywords may remain in English only when necessary.
+`;
+
+async function askJannat(prompt) {
+  const res = await axios.post(
+    "https://arafat-gpt-api.vercel.app/api/chat",
+    {
+      messages: [
+        { role: "system", content: JANNAT_PERSONA },
+        { role: "user", content: prompt }
+      ]
+    },
+    { headers: { "Content-Type": "application/json" } }
+  );
+
+  return res.data?.choices?.[0]?.message?.content;
+}
 
 module.exports = {
-        config: {
-                name: "deepseek",
-                version: "1.7",
-                author: "MahMUD",
-                countDown: 5,
-                role: 0,
-                description: {
-                        bn: "ডিপসিক এআই এর মাধ্যমে আপনার প্রশ্নের উত্তর পান",
-                        en: "Get answers from DeepSeek AI"
-                },
-                category: "ai",
-                guide: {
-                        bn: '   {pn} <প্রশ্ন>: যেকোনো কিছু জিজ্ঞাসা করুন\n   রিপ্লাইয়ের মাধ্যমে কথোপকথন চালিয়ে যেতে পারবেন',
-                        en: '   {pn} <prompt>: Ask anything to AI\n   You can continue chat by replying'
-                }
-        },
+  config: {
+    name: "deepseek",
+    aliases: ["ds"],
+    version: "1.9.0",
+    author: "Arafat | Modified by Babu",
+    role: 0,
+    description: {
+      en: "Uses ChatGPT API with Jannat romantic Bangla persona"
+    },
+    category: "AI",
+    usePrefix: false
+  },
 
-        langs: {
-                bn: {
-                        noPrompt: "⚠️ বেবি, কিছু তো জিজ্ঞাসা করো! উদাহরণ: {pn} তুমি কে?",
-                        noResponse: "× এআই থেকে কোনো উত্তর পাওয়া যায়নি।",
-                        error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
-                },
-                en: {
-                        noPrompt: "⚠️ Baby, please provide a prompt! Example: {pn} Who are you?",
-                        noResponse: "× No response from AI.",
-                        error: "× API error: %1. Contact MahMUD for help."
-                }
-        },
+  onStart: async function () {},
 
-        onStart: async function ({ api, event, args, message, getLang }) {
-                const authorName = String.fromCharCode(77, 97, 104, 77, 85, 68);
-                if (this.config.author !== authorName) {
-                        return api.sendMessage("You are not authorized to change the author name.", event.threadID, event.messageID);
-                }
+  onChat: async function ({ message, event }) {
+    try {
+      const body = event.body || "";
+      const lower = body.toLowerCase();
 
-                const prompt = args.join(" ");
-                if (!prompt) return message.reply(getLang("noPrompt"));
+      if (!lower.startsWith("deepseek ") && !lower.startsWith("ds ")) return;
 
-                return await handleDeepSeek(api, event, prompt, this.config.name, getLang);
-        },
+      const prompt = body.split(" ").slice(1).join(" ").trim();
+      if (!prompt) return message.reply("জান, আগে কিছু লিখো তো 😘");
 
-        onReply: async function ({ api, event, Reply, args, getLang }) {
-                if (Reply.author !== event.senderID) return;
-
-                const prompt = args.join(" ");
-                if (!prompt) return;
-
-                return await handleDeepSeek(api, event, prompt, this.config.name, getLang);
-        }
+      const ai = await askJannat(prompt);
+      return message.reply(ai || "জান, এখন উত্তরটা পেলাম না 😔");
+    } catch (err) {
+      return message.reply("উফ জান, একটু সমস্যা হলো 😔 " + (err.response?.data?.error || err.message));
+    }
+  }
 };
-
-async function handleDeepSeek(api, event, prompt, commandName, getLang) {
-        try {
-                const baseApi = await getBaseApi();
-                const apiUrl = `${baseApi}/api/deepseek?prompt=${encodeURIComponent(prompt)}`;
-                const response = await axios.get(apiUrl);
-                const replyText = response.data.response || getLang("noResponse");
-
-                api.sendMessage(replyText, event.threadID, (error, info) => {
-                        if (!error) {
-                                global.GoatBot.onReply.set(info.messageID, {
-                                        commandName: commandName,
-                                        author: event.senderID,
-                                        messageID: info.messageID
-                                });
-                        }
-                }, event.messageID);
-
-        } catch (err) {
-                console.error("DeepSeek Error:", err);
-                api.sendMessage(getLang("error", err.message), event.threadID, event.messageID);
-        }
-}
