@@ -15,20 +15,14 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "বিভিন্ন ক্যাটাগরির ক্যাপশন পান অথবা নতুন ক্যাপশন যোগ করুন",
-                        en: "Get captions from various categories or add new ones",
-                        vi: "Lấy chú thích từ các danh mục khác nhau hoặc thêm chú thích mới"
+                        
                 },
                 category: "love",
                 guide: {
                         bn: '   {pn} <category> <lang>: ক্যাপশন পান (Default: bn)'
                                 + '\n   {pn} list: সব ক্যাটাগরি দেখুন'
                                 + '\n   {pn} add <cat> <lang> <text>: নতুন ক্যাপশন যোগ করুন',
-                        en: '   {pn} <category> <lang>: Get caption (Default: bn)'
-                                + '\n   {pn} list: See all categories'
-                                + '\n   {pn} add <cat> <lang> <text>: Add new caption',
-                        vi: '   {pn} <danh mục> <ngôn ngữ>: Lấy chú thích'
-                                + '\n   {pn} list: Xem tất cả các danh mục'
-                                + '\n   {pn} add <cat> <lang> <văn bản>: Thêm chú thích mới'
+                        
                 }
         },
 
@@ -40,20 +34,7 @@ module.exports = {
                         success: "✅| এই নাও তোমার %1 ক্যাপশন:\n\n%2",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        noInput: "× Baby, please specify a category! Example: {pn} love",
-                        listTitle: ">🎀 Available categories:\n\n",
-                        addUsage: "⚠ Usage: {pn} add <category> <bn/en> <text>",
-                        success: "✅| Here’s your %1 caption:\n\n%2",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        noInput: "× Cưng ơi, hãy nhập danh mục! Ví dụ: {pn} love",
-                        listTitle: ">🎀 Các danh mục có sẵn:\n\n",
-                        addUsage: "⚠ Cách dùng: {pn} add <danh mục> <bn/en> <văn bản>",
-                        success: "✅| Chú thích %1 của cưng đây:\n\n%2",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
-                }
+             
         },
 
         onStart: async function ({ api, event, args, message, getLang }) {
