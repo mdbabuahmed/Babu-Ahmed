@@ -10,14 +10,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "বটের পেন্ডিং ফ্রেন্ড রিকোয়েস্টগুলো এক্সেপ্ট বা ডিলিট করুন (অ্যাডমিন)",
-                        en: "Accept or delete pending friend requests of the bot (Admin)",
-                        vi: "Chấp nhận hoặc xóa các yêu cầu kết bạn đang chờ của bot (Quản trị viên)"
+                     
                 },
                 category: "admin",
                 guide: {
                         bn: '   {pn}: রিকোয়েস্ট লিস্ট দেখতে ব্যবহার করুন। তারপর রিপ্লাই দিন "add <index>" অথবা "del <index>"।',
-                        en: '   {pn}: Use to see request list. Then reply "add <index>" or "del <index>".',
-                        vi: '   {pn}: Sử dụng để xem danh sách yêu cầu. Sau đó trả lời "add <index>" hoặc "del <index>".'
+
                 }
         },
 
@@ -29,23 +27,8 @@ module.exports = {
                         invalidAction: "× ভুল কমান্ড! শুধু add অথবা del ব্যবহার করুন।",
                         done: "✅ কাজ শেষ!\n• সফল: %1\n• ব্যর্থ: %2",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
-                },
-                en: {
-                        noRequest: "× No pending friend requests! 😴",
-                        listHeader: "📋 Total Requests: %1\n",
-                        replyGuide: "\n• Reply 'add <index|all>' to accept\n• Reply 'del <index|all>' to delete",
-                        invalidAction: "× Invalid action! Use 'add' or 'del'.",
-                        done: "✅ Task Complete!\n• Success: %1\n• Failed: %2",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        noRequest: "× Không có yêu cầu kết bạn nào đang chờ! 😴",
-                        listHeader: "📋 Tổng số yêu cầu: %1\n",
-                        replyGuide: "\n• Trả lời 'add <index|all>' để chấp nhận\n• Trả lời 'del <index|all>' để xóa",
-                        invalidAction: "× Hành động không hợp lệ! Sử dụng 'add' hoặc 'del'.",
-                        done: "✅ Hoàn thành!\n• Thành công: %1\n• Thất bại: %2",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
                 }
+             
         },
 
         onReply: async function ({ message, Reply, event, api, commandName, getLang }) {
