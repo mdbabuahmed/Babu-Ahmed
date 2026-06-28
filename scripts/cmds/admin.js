@@ -10,15 +10,12 @@ module.exports = {
                 role: 2,
                 description: {
                         bn: "বোট অ্যাডমিন যোগ, অপসারণ বা তালিকা দেখুন",
-                        en: "Add, remove, or list bot admins",
-                        vi: "Thêm, xóa, sửa quyền admin"
+                       
                 },
                 category: "box chat",
                 guide: {
                         bn: '   {pn} add [ID | @tag]: অ্যাডমিন যোগ করতে\n   {pn} remove [ID | @tag]: অ্যাডমিন সরাতে\n   {pn} list: অ্যাডমিন লিস্ট দেখতে',
-                        en: '   {pn} [add | -a] <uid | @tag>: Add admin role\n   {pn} [remove | -r] <uid | @tag>: Remove admin role\n   {pn} [list | -l]: List all admins',
-                        vi: '   {pn} [add | -a] <uid | @tag>: Thêm quyền admin\n   {pn} [remove | -r] <uid | @tag>: Xóa quyền admin\n   {pn} [list | -l]: Liệt kê danh sách admin'
-                }
+                    
         },
 
         langs: {
@@ -30,25 +27,8 @@ module.exports = {
                         notAdmin: "⚠️ | %1 জন অ্যাডমিন তালিকায় ছিল না:\n%2",
                         missingIdRemove: "⚠️ | বেবি, অ্যাডমিন সরাতে আইডি দিন অথবা কাউকে ট্যাগ করুন!",
                         listAdmin: "👑 | বোট অ্যাডমিন তালিকা:\n\n%1"
-                },
-                en: {
-                        added: "✅ | Added admin role for %1 users:\n%2",
-                        alreadyAdmin: "\n⚠️ | %1 users already have admin role:\n%2",
-                        missingIdAdd: "⚠️ | Please enter ID or tag user to add admin role",
-                        removed: "✅ | Removed admin role of %1 users:\n%2",
-                        notAdmin: "⚠️ | %1 users don't have admin role:\n%2",
-                        missingIdRemove: "⚠️ | Please enter ID or tag user to remove admin role",
-                        listAdmin: "👑 | List of admins:\n\n%1"
-                },
-                vi: {
-                        added: "✅ | Đã thêm quyền admin cho %1 người dùng:\n%2",
-                        alreadyAdmin: "\n⚠️ | %1 người dùng đã có quyền admin:\n%2",
-                        missingIdAdd: "⚠️ | Vui lòng nhập ID hoặc tag để thêm admin",
-                        removed: "✅ | Đã xóa quyền admin của %1 người dùng:\n%2",
-                        notAdmin: "⚠️ | %1 người dùng không có quyền admin:\n%2",
-                        missingIdRemove: "⚠️ | Vui lòng nhập ID hoặc tag để xóa admin",
-                        listAdmin: "👑 | Danh sách admin:\n\n%1"
                 }
+               
         },
 
         onStart: async function ({ api, message, args, usersData, event, getLang }) {
