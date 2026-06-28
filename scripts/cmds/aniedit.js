@@ -17,14 +17,12 @@ module.exports = {
                 role: 0,
                 description: {
                         bn: "যেকোনো এনিমে এডিট ভিডিও সার্চ করে ডাউনলোড করুন",
-                        en: "Search and download any anime edit video",
-                        vi: "Tìm kiếm và tải xuống bất kỳ video chỉnh sửa anime nào"
+                      
                 },
                 category: "anime",
                 guide: {
                         bn: '   {pn} <নাম>: (যেমন: {pn} Goku Ultra)',
-                        en: '   {pn} <keyword>: (Ex: {pn} Goku Ultra)',
-                        vi: '   {pn} <từ khóa>: (VD: {pn} Goku Ultra)'
+                       
                 }
         },
 
@@ -35,18 +33,7 @@ module.exports = {
                         success: "• 𝐇𝐄𝐑𝐄'𝐒 𝐘𝐎𝐔𝐑 𝐀𝐍𝐈𝐌𝐄 𝐄𝐃𝐈𝐓𝐙 𝐕𝐈𝐃𝐄𝐎\n• 𝐒𝐞𝐚𝐫𝐜𝐡: %1",
                         error: "× সমস্যা হয়েছে: %1। প্রয়োজনে Contact MahMUD।"
                 },
-                en: {
-                        noInput: "× Baby, what anime edit video are you looking for?",
-                        tooLarge: "× Video too large (over 25MB)!",
-                        success: "• 𝐇𝐄𝐑𝐄'𝐒 𝐘𝐎𝐔𝐑 𝐀𝐍𝐈𝐌𝐄 𝐄𝐃𝐈𝐓𝐙 𝐕𝐈𝐃𝐄𝐎\n• 𝐒𝐞𝐚𝐫𝐜𝐡: %1",
-                        error: "× API error: %1. Contact MahMUD for help."
-                },
-                vi: {
-                        noInput: "× Cưng ơi, cưng đang tìm video anime edit nào?",
-                        tooLarge: "× Video quá lớn (hơn 25MB)!",
-                        success: "• 𝐕𝐢𝐝𝐞𝐨 𝐀𝐧𝐢𝐦𝐞 𝐄𝐝𝐢𝐭 𝐜𝐮̉𝐚 𝐜𝐮̛𝐧𝐠 đ𝐚̂𝐲\n• 𝐓𝐢̀𝐦 𝐤𝐢𝐞̂́𝐦: %1",
-                        error: "× Lỗi: %1. Liên hệ MahMUD để hỗ trợ."
-                }
+               
         },
 
         onStart: async function ({ api, event, args, message, getLang }) {
